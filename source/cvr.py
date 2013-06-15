@@ -22,8 +22,13 @@ def get_data(cvr):
 
         data = json.loads(res.read())
 
-        address = data['adresse'] + ", " + str(data['postnr']) + " " + data['by']
-        fb.add_item(data['navn'],  address + " - Tlf: " + data['telefon'], cvr)
+        if 'error' in data:
+            fb.add_item("Ugyldigt CVR-nummer")
+        else:
+            address = data['adresse'] + ", " + str(data['postnr']) + " " + data['by']
+            fb.add_item(data['navn'],  address + " - Tlf: " + data['telefon'], cvr)
+    elif len(cvr) > 8:
+        fb.add_item("CVR-nummeret er for langt", "CVR-numre er 8-cifret")
     else:
-        fb.add_item("Ugyldigt CVR-nummer")
+        fb.add_item("Indtast CVR-nummer")
     print fb
