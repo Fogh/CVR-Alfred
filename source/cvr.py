@@ -14,6 +14,7 @@ def get_data(cvr):
     if len(cvr) == 8:
         req = urllib2.Request(url(cvr))
         req.add_header("Accept", "application/json")
+        req.add_header("User-agent", "CVR-Alfred")
         try:
             res = urllib2.urlopen(req)
         except urllib2.URLError:
