@@ -43,7 +43,7 @@
 				<string>from cvr import lookup
 lookup("{query}")</string>
 				<key>subtext</key>
-				<string>F.eks. 10150817</string>
+				<string>F.eks. 10150817 eller Erhvervsstyrelsen</string>
 				<key>title</key>
 				<string>CVR opslag</string>
 				<key>type</key>
