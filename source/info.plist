@@ -40,8 +40,8 @@
 				<key>runningsubtext</key>
 				<string>Henter...</string>
 				<key>script</key>
-				<string>from cvr import get_data
-get_data("{query}")</string>
+				<string>from cvr import lookup
+lookup("{query}")</string>
 				<key>subtext</key>
 				<string>F.eks. 10150817</string>
 				<key>title</key>
