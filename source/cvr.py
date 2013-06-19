@@ -47,6 +47,8 @@ def lookup(query):
             fb = parse_data(data, False)
     elif len(query) > 8 and query.isdigit():
         fb.add_item("CVR-nummeret er for langt", "CVR-numre er 8-cifret")
+    elif len(query) < 8 and query.isdigit():
+        fb.add_item("Indtast CVR-nummer")
     else:
         data = get_data(name=query)
         fb = parse_data(data, True)
