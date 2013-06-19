@@ -25,9 +25,15 @@ def parse_data(data, showCVR):
     fb = Feedback()
     address = data['adresse'] + ", " + str(data['postnr']) + " " + data['by']
     name = data['navn']
+    phone = ""
+    mail = ""
     if showCVR:
         name = data['navn'] + " - " + str(data['cvr'])
-    fb.add_item(name, address + " - Tlf: " + data['telefon'], str(data['cvr']))
+    if 'telefon' in data:
+            phone = " - Tlf: " + data['telefon']
+    if 'email' in data:
+        mail = " - Email: " + data['email']
+    fb.add_item(name, address + phone + mail, str(data['cvr']))
     return fb
 
 
