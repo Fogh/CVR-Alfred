@@ -1,7 +1,7 @@
 CVR-Alfred
 ==========
 
-Lookup Danish CVR-numbers - [Alfred](http://www.alfredapp.com/) workflow
+Lookup Danish companies by their name or CVR number - [Alfred](http://www.alfredapp.com/) workflow
 
 ![CVR-Alfred](http://cl.ly/PfK2/Screen%20Shot%202013-06-15%20at%2021.23.45.png)
 
