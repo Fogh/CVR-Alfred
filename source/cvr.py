@@ -6,11 +6,8 @@ from feedback import Feedback
 _DEFAULTHOST = "https://cvrapi.dk/"
 
 
-def get_data(cvr="", name=""):
-    if cvr:
-        req = urllib2.Request(_DEFAULTHOST + cvr)
-    elif name:
-        req = urllib2.Request(_DEFAULTHOST + "name/" + urllib.quote(name))
+def get_data(cvr):
+    req = urllib2.Request(_DEFAULTHOST + urllib.quote(cvr))
     req.add_header("Accept", "application/json")
     req.add_header("User-agent", "CVR-Alfred")
     try:
@@ -50,6 +47,6 @@ def lookup(query):
     elif len(query) < 8 and query.isdigit():
         fb.add_item("Indtast CVR-nummer")
     else:
-        data = get_data(name=query)
+        data = get_data(query)
         fb = parse_data(data, True)
     print fb
