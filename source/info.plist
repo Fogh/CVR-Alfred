@@ -21,7 +21,7 @@
 	<key>createdby</key>
 	<string>Anders Fogh Eriksen</string>
 	<key>description</key>
-	<string>Lav CVR opslag</string>
+	<string>Lav CVR opslag på danske virksomheder</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -77,7 +77,12 @@ lookup("{query}")</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Slå danske virksomheder op på deres CVR-numre eller navn.
+
+Eksempler:
+
+"cvr 10150817"
+"cvr Erhvervstyrelsen"</string>
 	<key>uidata</key>
 	<dict>
 		<key>73CC9D0A-6EB6-4277-8B1F-48ABA99A1069</key>
