@@ -12,3 +12,7 @@ Lookup Danish companies by their name or [CVR number](http://en.wikipedia.org/wi
 ## Data source
 
 [CVRAPI.dk](https://CVRAPI.dk)
+
+## License
+
+This workflow and code is licensed under the [MIT license](http://opensource.org/licenses/MIT).
