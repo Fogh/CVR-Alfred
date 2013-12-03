@@ -3,7 +3,7 @@ import urllib2
 import urllib
 from feedback import Feedback
 
-_DEFAULTHOST = "https://cvrapi.dk/"
+_DEFAULTHOST = "http://cvrapi.dk/"
 
 
 def get_data(cvr):
