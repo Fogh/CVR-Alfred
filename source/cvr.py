@@ -3,11 +3,11 @@ import urllib2
 import urllib
 from feedback import Feedback
 
-_DEFAULTHOST = "http://cvrapi.dk/"
+_DEFAULTHOST = "http://cvrapi.dk/api?country=dk&version=3"
 
 
 def get_data(cvr):
-    req = urllib2.Request(_DEFAULTHOST + urllib.quote(cvr))
+    req = urllib2.Request(_DEFAULTHOST + "&search=" + urllib.quote(cvr))
     req.add_header("Accept", "application/json")
     req.add_header("User-agent", "CVR-Alfred")
     try:
@@ -20,17 +20,17 @@ def get_data(cvr):
 
 def parse_data(data, showCVR):
     fb = Feedback()
-    address = data['adresse'] + ", " + str(data['postnr']) + " " + data['by']
-    name = data['navn']
+    address = data['address'] + ", " + str(data['zipcode']) + " " + data['city']
+    name = data['name']
     phone = ""
     mail = ""
     if showCVR:
-        name = data['navn'] + " - " + str(data['cvr'])
-    if 'telefon' in data:
-            phone = " - Tlf: " + data['telefon']
+        name = data['name'] + " - " + str(data['vat'])
+    if 'phone' in data:
+            phone = " - Tlf: " + data['phone']
     if 'email' in data:
         mail = " - Email: " + data['email']
-    fb.add_item(name, address + phone + mail, str(data['cvr']))
+    fb.add_item(name, address + phone + mail, str(data['vat']))
     return fb
 
 
