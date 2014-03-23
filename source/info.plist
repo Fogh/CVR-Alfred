@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>dk.afogh.alfred.cvr</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>73CC9D0A-6EB6-4277-8B1F-48ABA99A1069</key>
