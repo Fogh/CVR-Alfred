@@ -25,9 +25,9 @@ def parse_data(data, showCVR):
     phone = ""
     mail = ""
     if showCVR:
-        name = data['name'] + " - " + str(data['vat'])
+        name = data['name'] + " - CVR: " + str(data['vat'])
     if 'phone' in data:
-            phone = " - Tlf: " + data['phone']
+            phone = " - Tlf.: " + data['phone']
     if 'email' in data:
         mail = " - Email: " + data['email']
     fb.add_item(name, address + phone + mail, str(data['vat']))
