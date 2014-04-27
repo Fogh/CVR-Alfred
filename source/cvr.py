@@ -3,7 +3,7 @@ import urllib2
 import urllib
 from feedback import Feedback
 
-_DEFAULTHOST = "http://cvrapi.dk/api?country=dk&version=3"
+_DEFAULTHOST = "http://cvrapi.dk/api?country=dk&version=4"
 
 
 def get_data(cvr):
