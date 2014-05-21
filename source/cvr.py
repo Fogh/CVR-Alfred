@@ -51,5 +51,8 @@ def lookup(query):
         fb.add_item("Indtast CVR-nummer")
     else:
         data = get_data(query)
-        fb = parse_data(data, True)
+        if 'error' in data and data['error'] == 'NOT_FOUND':
+            fb.add_item(u"Din søgning gav intet resultat")
+        else:
+            fb = parse_data(data, True)
     print fb
