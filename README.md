@@ -13,3 +13,7 @@ Lookup Danish companies by their name or [CVR number](http://en.wikipedia.org/wi
 ## Data source
 
 [CVRAPI.dk](https://CVRAPI.dk)
+
+## iOS app
+
+[CVRTjek](https://itunes.apple.com/dk/app/cvrtjek/id590856967?at=10lHcz)
