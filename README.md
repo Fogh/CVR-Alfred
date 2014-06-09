@@ -1,6 +1,6 @@
 CVR-Alfred
 ==========
-![](http://img.shields.io/github/tag/Fogh/CVR-Alfred.svg)
+![](http://img.shields.io/github/tag/Fogh/CVR-Alfred.svg?style=flat)
 
 Lookup Danish companies by their name or [CVR number](http://en.wikipedia.org/wiki/VAT_identification_number) (VAT number) - [Alfred](http://www.alfredapp.com/) workflow
 
