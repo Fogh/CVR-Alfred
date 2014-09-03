@@ -16,5 +16,5 @@ Lookup Danish companies by their name or [CVR number](http://en.wikipedia.org/wi
 
 ## Mobile apps
 
-[CVRTjek - iOS](https://itunes.apple.com/dk/app/cvrtjek/id590856967?at=10lHcz)
-[CVRTjek - Android](https://play.google.com/store/apps/details?id=dk.glynwilliams.cvrtjek)
+- [CVRTjek - iOS](https://itunes.apple.com/dk/app/cvrtjek/id590856967?at=10lHcz)
+- [CVRTjek - Android](https://play.google.com/store/apps/details?id=dk.glynwilliams.cvrtjek)
