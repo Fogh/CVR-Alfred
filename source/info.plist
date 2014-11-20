@@ -66,7 +66,7 @@ lookup("{query}")</string>
 				<key>plusspaces</key>
 				<false/>
 				<key>url</key>
-				<string>http://cvrapi.dk/pretty/{query}</string>
+				<string>https://cvrapi.dk/lookup/dk/{query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
